@@ -22,6 +22,7 @@ The goal of this analysis is to evaluate chip product purchasing data to provide
 ## 🛠️ Tech Stack & Libraries
 This analysis was built using **Python 3.10.19** and the following data science ecosystem:
 
+* **Data Loading:** `openpyxl` (Required for Excel `.xlsx` file ingestion).
 * **Data Manipulation:** `Pandas`, `NumPy` (for cleaning and structuring retail transactions).
 * **Data Quality & Cleaning:** `re` (Regex/Regular Expressions for product name standardization).
 * **Statistical Analysis:** `Scipy.stats` (to validate behavioral trends between segments).
@@ -34,8 +35,18 @@ This analysis was built using **Python 3.10.19** and the following data science 
 To run this analysis locally, follow these steps:
 
 1. **Clone the repository:**
-`git clone https://github.com/noel-akinyi/Chip-Purchasing-Behavior-Analysis.git`
+   `git clone https://github.com/noel-akinyi/Chip-Purchasing-Behavior-Analysis.git`
 
+2. **Install Dependencies:**
+   Ensure you have Python installed, then run:
+   `pip install pandas openpyxl numpy matplotlib seaborn scipy`
+
+3. **Data Placement:**
+   Place the `QVI_transaction_data.xlsx` and `QVI_purchase_behaviour.csv` files in the root folder of the cloned directory.
+
+4. **Run the Analysis:**
+   Open `Chip_Analysis.ipynb` in Jupyter Notebook or VS Code and run all cells.
+   
 ---
 
 ## Key Insights (Analysis in Progress)
